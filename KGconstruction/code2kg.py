@@ -1,6 +1,6 @@
-from extract_relations import extract_relations
 from nltk.corpus import stopwords
 from neo4j import GraphDatabase
+from extract_relations import *
 import json
 import re
 import os
@@ -16,39 +16,37 @@ TYPES of ARTIFACTS to be used (Spell Strictly):
 # Migrate to javalang parser?
 # May be merge "method" and "javamethod"?
 # ***connetions to multiple nodes with same type.
-# ***remove stop words and lemmatize the words.
 
 # Both comments and string literals are nodes of type "Description". But the relations which connect them to the code nodes are has_comment, has_string.
 # These relations can be used to identify them as comment/string nodes.
 
-stop_words = set(stopwords.words("english"))
 
 def update_kg(session, code, code_lines, code_name, docstring, uri):
-    # create_code_nodes(session, code_name, docstring, uri)
+    create_code_nodes(session, code_name, docstring, uri)
     
     comments = retrieve_comments(code, code_lines)
     strings = retrieve_strings(code)
     methods = retrieve_methods(code)
     methods = methods[1:]       # First one is name of the main function.
-    print("comments\n", comments)
-    print("strings\n", strings)
-    # new_methods = create_artifact_nodes(session, strings, "StringLiteral")
-    # new_methods = create_artifact_nodes(session, comments, "Comment")
-    # new_methods = create_artifact_nodes(session, methods, "Method")
+    # print("comments\n", comments)
+    # print("strings\n", strings)
+    
+    new_methods_count = create_artifact_nodes(session, strings, "StringLiteral")
+    new_methods_count = create_artifact_nodes(session, comments, "Comment")
+    new_methods_count = create_artifact_nodes(session, methods, "Method")
 
-    # edges = []
-    # for method in methods:
-    #     edges.append([uri, "Code", method, "Method", "Calls"])
-    # for comment in comments:
-    #     edges.append([uri, "Code", comment, "Comment", "has_comment"])
-    # for string in strings:
-    #     edges.append([uri, "Code", string, "StringLiteral", "has_string"])
+    edges = []
+    for method in methods:
+        edges.append([uri, "Code", method, "Method", "Calls"])
+    for comment in comments:
+        edges.append([uri, "Code", comment, "Comment", "has_comment"])
+    for string in strings:
+        edges.append([uri, "Code", string, "StringLiteral", "has_string"])
 
-    # create_relations(session, edges)
+    create_relations(session, edges)
 
-    # return [len(methods), new_methods]
+    return [len(methods), new_methods_count]
 
-# returns a list of method names used in the code.
 def retrieve_methods(test_func):
     method_calls = []
     cur_word = ''
@@ -88,36 +86,52 @@ def retrieve_methods(test_func):
 
     return new_method_calls
 
-def retrieve_strings(test_func):
-    comms = re.findall('"(.*?)"', test_func)
-    final_list = []
-    for tent in comms:
-        tent = strip(tent).split(' ')
-        for ww in tent:
-                if ww != "" and (ww not in stop_words):
-                    # temp = camel_case_split(ww)
-                    # for k in temp:
-                    #     final_list.append(k)
-                    final_list.append(ww)
+def retrieve_strings(code):
+    # strs = re.findall('"(.*?)"', code)
+    # final_list = []
+    # for tent in strs:
+    #     tent = strip(tent).split(' ')
+    #     for ww in tent:
+    #             if ww != "" and (ww not in stop_words):
+    #                 # temp = camel_case_split(ww)
+    #                 # for k in temp:
+    #                 #     final_list.append(k)
+    #                 final_list.append(ww)
+    strings = re.findall('"(.*?)"', code)
+    strings_new = []
+    for string in strings:
+        strings_new.append(preprocess_new(string))
 
-    return final_list
+    strings = []
+    [strings.append(word) for string in strings_new for word in string if word not in strings]
+    return strings
 
 def retrieve_comments(code, code_lines):
     # comms = re.findall('/\[(.*?)\]/', test_func)
+    # final_list = []
+    # for line in code_lines:
+    #     if '//' in line:
+    #         tent = strip(line).split(' ')
+    #         for ww in tent:
+    #             if ww != "" and (ww not in stop_words):
+    #                 # temp = camel_case_split(ww)                     
+    #                 # for k in temp:
+    #                 #     final_list.append(k)
+    #                 final_list.append(ww)
+
     pattern = re.compile('(?:/\*(.*?)\*/)|(?://(.*?)\n)', re.S)
     comments = pattern.findall(code)
 
-    final_list = []
-    for line in code_lines:
-        if '//' in line:
-            tent = strip(line).split(' ')
-            for ww in tent:
-                if ww != "" and (ww not in stop_words):
-                    # temp = camel_case_split(ww)                     
-                    # for k in temp:
-                    #     final_list.append(k)
-                    final_list.append(ww)
-    return final_list
+    comments_new = []
+    for comment in comments:
+        if comment[0] != '':
+            comments_new.append(preprocess_new(comment[0]))
+        if comment[1] != '':
+            comments_new.append(preprocess_new(comment[1]))
+            
+    comments = []
+    [comments.append(word) for sent in comments_new for word in sent if word not in comments]
+    return comments
 
 def camel_case_split(string):
     
@@ -196,6 +210,8 @@ def create_database(session):
 def delete_database(session):
     session.run("MATCH (n) DETACH DELETE n")
 
+def return_all(session):
+    session.run("MATCH (a)-[r]->(b) RETURN *")
 
 # INPUT: session, code_name, uri of the code snippet
 # If the code with given URI doesn't exist already, adds it into DB as a "Code" node.
@@ -209,11 +225,10 @@ def create_code_nodes(session, code_name, docstring, uri):
     # for entity, relation in relations.items():
     #     session.run("MATCH (c: Code) WHERE c.name = $cname MERGE (d: Description {name: $dname}) CREATE (c)-[r: action {name: $rname}]->(d)", cname=code_name, rname=relation[1], dname=entity)
 
-
 # INPUT: session, list of artifact names, type of artifacts in the list
 # For each artifact, if it doesn't exist in DB, inserts it as a "_type" node.
 def create_artifact_nodes(session, artifacts, _type):
-    new_methods = 0
+    new_methods_count = 0
     for art in artifacts:
         if _type == "Method":
             # Check if javamethod is present else, add normal method
@@ -221,13 +236,13 @@ def create_artifact_nodes(session, artifacts, _type):
             records1 = session.run("MATCH (m: Method) WHERE (m.name = $mname) RETURN COUNT(m)", mname=art).data()
             if records == 0 and records1 == 0:
                 session.run("CREATE (a:" + _type + " {name: $name})", name=art)
-                new_methods = new_methods + 1
+                new_methods_count = new_methods_count + 1
             # session.run("MERGE (a:" + _type + " {name: $name})", name=art)
         elif _type == "StringLiteral" or _type == "Comment":
             # session.run("MERGE (a:Description {name: $name, type: $type})", name=art, type=_type)
             session.run("MERGE (a:Description {name: $name})", name=art)
 
-    return new_methods
+    return new_methods_count
 
 # INPUT: session, list of edges. Each edge contains [name1, type1, name2, type2, relation]. (1)-[relation]->(2)
 def create_relations(session, edges):
@@ -256,9 +271,6 @@ def create_relations(session, edges):
         query = "MATCH (a:" + type1 + "), (b:" + type2 + ") WHERE a." + prop1 + "=\"" + edge[0] + "\" AND b." + prop2 + " = \"" + edge[2] + "\" MERGE (a)-[r:" + edge[4] + "]->(b)"
         res = session.run(query)
 
-
-def return_all(session):
-    session.run("MATCH (a)-[r]->(b) RETURN *")
 
 
 def insert_codes(path, driver):

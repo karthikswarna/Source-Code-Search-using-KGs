@@ -1,4 +1,5 @@
 import nltk
+import string
 from nltk.corpus import wordnet
 from nltk.tree import ParentedTree
 from nltk.stem import WordNetLemmatizer
@@ -15,9 +16,22 @@ grammar = r"""
 #   VP: {<VB.*><NP|PP>$}            # Chunk verbs and their arguments
 #   """
 
+lemmatizer = WordNetLemmatizer()
+stop_words = set(nltk.corpus.stopwords.words("english"))
+
+def preprocess_new(document):
+    description = preprocess(document)
+    description = [word for sentence in description for word in sentence]
+    new_words = []
+    for word_pos in description:
+        if word_pos[0] not in stop_words:
+            new_words.append(lemmatizer.lemmatize(word_pos[0], pos=get_pos(word_pos[1])))
+
+    return new_words
+
 def preprocess(document):
     sentences = nltk.sent_tokenize(document)
-    sentences = [nltk.word_tokenize(sent) for sent in sentences]
+    sentences = [nltk.word_tokenize(sent.translate(str.maketrans('', '', string.punctuation))) for sent in sentences]
     sentences = [nltk.pos_tag(sent) for sent in sentences]
     return sentences
 
@@ -35,8 +49,6 @@ def get_pos(tag):
 
 def extract_relations(sentences):
     sentences = preprocess(sentences)
-    lemmatizer = WordNetLemmatizer()
-    stop_words = set(nltk.corpus.stopwords.words("english"))
 
     exp = {}
     verb = ''

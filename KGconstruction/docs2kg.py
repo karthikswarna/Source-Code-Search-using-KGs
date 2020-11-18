@@ -1,5 +1,5 @@
-from extract_relations import extract_relations
 from neo4j import GraphDatabase
+from extract_relations import *
 import json
 
 # Modules - 59
@@ -17,7 +17,6 @@ builtin_types = ['byte', 'char', 'short', 'int', 'long', 'float', 'double', 'boo
 repeated_classes = ["Accessible", "AlreadyBoundException", "Annotation", "Array", "ArrayType ", "Attribute ", "AttributeList ", "Attributes ", "AttributeSet", "AuthenticationException", "Authenticator", "Certificate ", "CertificateEncodingException", "CertificateException", "CertificateExpiredException", "CertificateNotYetValidException", "CertificateParsingException", "Channels", "Comment", "Configuration ", "ConnectException", "Connection", "ContentHandler", "Control", "Date", "DefaultLoaderRepository", "Document", "DocumentEvent", "DOMLocator", "DTD", "Duration", "Element ", "Entity", "EntityReference", "ErroneousTree", "Event ", "EventListener", "EventQueue", "FactoryConfigurationError", "Field", "FileFilter", "Filter", "Formatter", "GarbageCollectorMXBean", "GroupLayout", "HTMLDocument", "IdentifierTree", "IntrospectionException", "InvalidAttributeValueException", "InvalidKeyException", "Label", "List", "LiteralTree", "Location", "Manifest", "MarshalException", "MemoryAddress", "Method", "Modifier", "ModuleReference", "MonitorInfo", "MouseEvent", "Namespace", "Notification", "OpenType", "OperatingSystemMXBean", "Operation", "ParagraphView", "Parser", "Period", "Predicate", "PrimitiveType", "ProcessingInstruction", "ProvidesTree", "Proxy", "Reference ", "ReferenceType", "ReturnTree", "Statement", "StyleSheet", "ThreadMXBean", "Timer ", "Timestamp ", "ToolProvider", "TreePath", "Type", "Types", "TypeVariable", "UnknownHostException", "UserPrincipal", "UsesTree", "VirtualMachine", "WildcardType", "XPathException", "XPathExpression"]
 
 
-# TODO: add type attribute to all description nodes: "docs"
 # Deleting all the data.
 def delete_all(driver):
     with driver.session() as session:
@@ -31,9 +30,13 @@ def insert_modules(driver):
             modules = json.load(f)['modules']
             for module in modules:
                 session.run("CREATE (n:JavaModule {name: $name, uri: $uri})", name = module['name'], uri=module['link'])
-                relations = extract_relations(module['description'])
-                for entity, relation in relations.items():
-                    session.run("MATCH (m: JavaModule) WHERE m.name = $mname MERGE (d: Description {name: $dname}) CREATE (m)-[r: action {name: $rname}]->(d)", mname=module['name'], rname=relation[1], dname=entity)
+                
+                # relations = extract_relations(module['description'])
+                # for entity, relation in relations.items():
+                #     session.run("MATCH (m: JavaModule) WHERE m.name = $mname MERGE (d: Description {name: $dname}) CREATE (m)-[r: action {name: $rname}]->(d)", mname=module['name'], rname=relation[1], dname=entity)
+                description = preprocess_new(module['description'])
+                for word in description:
+                    session.run("MATCH (m: JavaModule) WHERE m.name = $mname MERGE (d: Description {name: $dname}) CREATE (m)-[r: has_description]->(d)", mname=module['name'], dname=word)
 
 
 ## Inserting module dependencies and packages into the graph.
@@ -45,9 +48,14 @@ def insert_packages(driver):
                 for module_name, dependencies in module.items():
                     for package in dependencies['Exported packages']:
                         session.run("MATCH (m: JavaModule) WHERE m.name = $mname CREATE (p: JavaPackage {name: $pname, uri: $puri}) CREATE (m)-[r:exports]->(p)", mname = module_name, pname = package['name'], puri = package['link'])
-                        relations = extract_relations(package['description'])
-                        for entity, relation in relations.items():
-                            session.run("MATCH (p: JavaPackage) WHERE p.name = $pname MERGE (d: Description {name: $dname}) CREATE (p)-[r: action {name: $rname}]->(d)", pname = package['name'], rname = relation[1], dname = entity)
+                        
+                        # relations = extract_relations(package['description'])
+                        # for entity, relation in relations.items():
+                        #     session.run("MATCH (p: JavaPackage) WHERE p.name = $pname MERGE (d: Description {name: $dname}) CREATE (p)-[r: action {name: $rname}]->(d)", pname = package['name'], rname = relation[1], dname = entity)
+                        description = preprocess_new(package['description'])
+                        for word in description:
+                            session.run("MATCH (p: JavaPackage) WHERE p.name = $pname MERGE (d: Description {name: $dname}) CREATE (m)-[r: has_description]->(d)", pname=package['name'], dname=word)
+
 
                     for reqmodule in dependencies['Required modules']:
                         session.run("MATCH (a: JavaModule), (b: JavaModule) WHERE a.name = $aname AND b.name = $bname CREATE (a)-[r:requires]->(b)", aname = module_name, bname = reqmodule)
@@ -63,9 +71,13 @@ def insert_classes(driver):
             classes = json.load(f)['classes']
             for classs in classes:
                 session.run("MATCH (p: JavaPackage) WHERE p.name = $pname CREATE (c:JavaClass {name: $name, uri: $uri}) CREATE (p)-[r:has_class]->(c)", pname = classs['package'], name = classs['name'], uri = classs['link'])
-                relations = extract_relations(classs['description'])
-                for entity, relation in relations.items():
-                    session.run("MATCH (p: JavaPackage)-[:has_class]->(c: JavaClass) WHERE p.name = $pname AND c.name = $cname MERGE (d: Description {name: $dname}) CREATE (c)-[r: action {name: $rname}]->(d)", pname = classs['package'], cname = classs['name'], rname = relation[1], dname = entity)
+                
+                # relations = extract_relations(classs['description'])
+                # for entity, relation in relations.items():
+                #     session.run("MATCH (p: JavaPackage)-[:has_class]->(c: JavaClass) WHERE p.name = $pname AND c.name = $cname MERGE (d: Description {name: $dname}) CREATE (c)-[r: action {name: $rname}]->(d)", pname = classs['package'], cname = classs['name'], rname = relation[1], dname = entity)
+                description = preprocess_new(classs['description'])
+                for word in description:
+                    session.run("MATCH (p: JavaPackage)-[:has_class]->(c: JavaClass) WHERE p.name = $pname AND c.name = $cname MERGE (d: Description {name: $dname}) CREATE (c)-[r: has_description]->(d)", pname = classs['package'], cname = classs['name'], dname = word)
 
 
 ## Inserting inheritence relations and methods into the graph.
@@ -81,12 +93,18 @@ def insert_methods(driver):
                                         CREATE (c)-[:has_method]->(m)""", 
                                         pname = methods['package'], cname = class_name, name = method['name'], returns = method['returns'], params = method['parameters'])
 
-                        relations = extract_relations(method['description'])
-                        for entity, relation in relations.items():
-                            session.run( """MATCH (p:JavaPackage)-[has_class]->(c:JavaClass)-[:has_method]->(m:JavaMethod) WHERE p.name = $pname AND c.name = $cname AND m.name = $mname
+                        # relations = extract_relations(method['description'])
+                        # for entity, relation in relations.items():
+                        #     session.run( """MATCH (p:JavaPackage)-[has_class]->(c:JavaClass)-[:has_method]->(m:JavaMethod) WHERE p.name = $pname AND c.name = $cname AND m.name = $mname
+                        #                     MERGE (d: Description {name: $dname})
+                        #                     CREATE (m)-[r:action {name: $rname}]->(d)""",
+                        #                     pname = methods['package'], cname = class_name, mname = method['name'], dname = entity, rname = relation[1])
+                        description = preprocess_new(method['description'])
+                        for word in description:
+                            session.run("""MATCH (p:JavaPackage)-[has_class]->(c:JavaClass)-[:has_method]->(m:JavaMethod) WHERE p.name = $pname AND c.name = $cname AND m.name = $mname
                                             MERGE (d: Description {name: $dname})
-                                            CREATE (m)-[r:action {name: $rname}]->(d)""",
-                                            pname = methods['package'], cname = class_name, mname = method['name'], dname = entity, rname = relation[1])
+                                            CREATE (m)-[r:has_description]->(d)""",
+                                            pname = methods['package'], cname = class_name, mname = method['name'], dname = word)
 
                     for method in methods['Inherited']:
                         session.run( """MATCH (p:JavaPackage)-[:has_class]->(c:JavaClass) WHERE p.name = $pname AND c.name = $cname
