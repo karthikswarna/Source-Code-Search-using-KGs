@@ -1,0 +1,6 @@
+CodeSearchNet
+.ipynb_checkpoints
+__pycache__
+arch_fig
+/KGconstruction/docs
+fasttext.model*

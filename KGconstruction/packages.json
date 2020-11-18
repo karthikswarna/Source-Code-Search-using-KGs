@@ -1,0 +1,1575 @@
+{
+    "packages": [
+        {
+            "java.base": {
+                "Exported packages": [
+                    {
+                        "name": "java.io",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/io/package-summary.html",
+                        "description": "Provides for system input and output through data streams, serialization and the file system. "
+                    },
+                    {
+                        "name": "java.lang",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/package-summary.html",
+                        "description": "Provides classes that are fundamental to the design of the Java programming language. "
+                    },
+                    {
+                        "name": "java.lang.annotation",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/annotation/package-summary.html",
+                        "description": "Provides library support for the Java programming language annotation facility. "
+                    },
+                    {
+                        "name": "java.lang.constant",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/constant/package-summary.html",
+                        "description": "Classes and interfaces to represent nominal descriptors for run-time entities such as classes or method handles, and classfile entities such as constant pool entries or invokedynamic call sites. "
+                    },
+                    {
+                        "name": "java.lang.invoke",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/invoke/package-summary.html",
+                        "description": "The java.lang.invoke package provides low-level primitives for interacting with the Java Virtual Machine. "
+                    },
+                    {
+                        "name": "java.lang.module",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/module/package-summary.html",
+                        "description": "Classes to support module descriptors and creating configurations of modules by means of resolution and service binding. "
+                    },
+                    {
+                        "name": "java.lang.ref",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/ref/package-summary.html",
+                        "description": "Provides reference-object classes, which support a limited degree of interaction with the garbage collector. "
+                    },
+                    {
+                        "name": "java.lang.reflect",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/reflect/package-summary.html",
+                        "description": "Provides classes and interfaces for obtaining reflective information about classes and objects. "
+                    },
+                    {
+                        "name": "java.lang.runtime",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/lang/runtime/package-summary.html",
+                        "description": "The java.lang.runtime package provides low-level runtime support for the Java language. "
+                    },
+                    {
+                        "name": "java.math",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/math/package-summary.html",
+                        "description": "Provides classes for performing arbitrary-precision integer arithmetic ( BigInteger ) and arbitrary-precision decimal arithmetic ( BigDecimal ). "
+                    },
+                    {
+                        "name": "java.net",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/net/package-summary.html",
+                        "description": "Provides the classes for implementing networking applications. "
+                    },
+                    {
+                        "name": "java.net.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/net/spi/package-summary.html",
+                        "description": "Service-provider classes for the java.net package. "
+                    },
+                    {
+                        "name": "java.nio",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/package-summary.html",
+                        "description": "Defines buffers, which are containers for data, and provides an overview of the other NIO packages. "
+                    },
+                    {
+                        "name": "java.nio.channels",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/channels/package-summary.html",
+                        "description": "Defines channels, which represent connections to entities that are capable of performing I/O operations, such as files and sockets; defines selectors, for multiplexed, non-blocking I/O operations. "
+                    },
+                    {
+                        "name": "java.nio.channels.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/channels/spi/package-summary.html",
+                        "description": "Service-provider classes for the java.nio.channels package. "
+                    },
+                    {
+                        "name": "java.nio.charset",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/charset/package-summary.html",
+                        "description": "Defines charsets, decoders, and encoders, for translating between bytes and Unicode characters. "
+                    },
+                    {
+                        "name": "java.nio.charset.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/charset/spi/package-summary.html",
+                        "description": "Service-provider classes for the java.nio.charset package. "
+                    },
+                    {
+                        "name": "java.nio.file",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/file/package-summary.html",
+                        "description": "Defines interfaces and classes for the Java virtual machine to access files, file attributes, and file systems. "
+                    },
+                    {
+                        "name": "java.nio.file.attribute",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/file/attribute/package-summary.html",
+                        "description": "Interfaces and classes providing access to file and file system attributes. "
+                    },
+                    {
+                        "name": "java.nio.file.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/nio/file/spi/package-summary.html",
+                        "description": "Service-provider classes for the java.nio.file package. "
+                    },
+                    {
+                        "name": "java.security",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/security/package-summary.html",
+                        "description": "Provides the classes and interfaces for the security framework. "
+                    },
+                    {
+                        "name": "java.security.cert",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/security/cert/package-summary.html",
+                        "description": "Provides classes and interfaces for parsing and managing certificates, certificate revocation lists (CRLs), and certification paths. "
+                    },
+                    {
+                        "name": "java.security.interfaces",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/security/interfaces/package-summary.html",
+                        "description": "Provides interfaces for generating RSA (Rivest, Shamir and Adleman AsymmetricCipher algorithm) keys as defined in the RSA Laboratory Technical Note PKCS#1, and DSA (Digital Signature Algorithm) keys as defined in NIST's FIPS-186. "
+                    },
+                    {
+                        "name": "java.security.spec",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/security/spec/package-summary.html",
+                        "description": "Provides classes and interfaces for key specifications and algorithm parameter specifications. "
+                    },
+                    {
+                        "name": "java.text",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/text/package-summary.html",
+                        "description": "Provides classes and interfaces for handling text, dates, numbers, and messages in a manner independent of natural languages. "
+                    },
+                    {
+                        "name": "java.text.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/text/spi/package-summary.html",
+                        "description": "Service provider classes for the classes in the java.text package. "
+                    },
+                    {
+                        "name": "java.time",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/time/package-summary.html",
+                        "description": "The main API for dates, times, instants, and durations. "
+                    },
+                    {
+                        "name": "java.time.chrono",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/time/chrono/package-summary.html",
+                        "description": "Generic API for calendar systems other than the default ISO. "
+                    },
+                    {
+                        "name": "java.time.format",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/time/format/package-summary.html",
+                        "description": "Provides classes to print and parse dates and times. "
+                    },
+                    {
+                        "name": "java.time.temporal",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/time/temporal/package-summary.html",
+                        "description": "Access to date and time using fields and units, and date time adjusters. "
+                    },
+                    {
+                        "name": "java.time.zone",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/time/zone/package-summary.html",
+                        "description": "Support for time-zones and their rules. "
+                    },
+                    {
+                        "name": "java.util",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/package-summary.html",
+                        "description": "Contains the collections framework, some internationalization support classes, a service loader, properties, random number generation, string parsing and scanning classes, base64 encoding and decoding, a bit array, and several miscellaneous utility classes. "
+                    },
+                    {
+                        "name": "java.util.concurrent",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/concurrent/package-summary.html",
+                        "description": "Utility classes commonly useful in concurrent programming. "
+                    },
+                    {
+                        "name": "java.util.concurrent.atomic",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/concurrent/atomic/package-summary.html",
+                        "description": "A small toolkit of classes that support lock-free thread-safe programming on single variables. "
+                    },
+                    {
+                        "name": "java.util.concurrent.locks",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/concurrent/locks/package-summary.html",
+                        "description": "Interfaces and classes providing a framework for locking and waiting for conditions that is distinct from built-in synchronization and monitors. "
+                    },
+                    {
+                        "name": "java.util.function",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/function/package-summary.html",
+                        "description": "Functional interfaces provide target types for lambda expressions and method references. "
+                    },
+                    {
+                        "name": "java.util.jar",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/jar/package-summary.html",
+                        "description": "Provides classes for reading and writing the JAR (Java ARchive) file format, which is based on the standard ZIP file format with an optional manifest file. "
+                    },
+                    {
+                        "name": "java.util.regex",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/regex/package-summary.html",
+                        "description": "Classes for matching character sequences against patterns specified by regular expressions. "
+                    },
+                    {
+                        "name": "java.util.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/spi/package-summary.html",
+                        "description": "Service provider classes for the classes in the java.util package. "
+                    },
+                    {
+                        "name": "java.util.stream",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/stream/package-summary.html",
+                        "description": "Classes to support functional-style operations on streams of elements, such as map-reduce transformations on collections. "
+                    },
+                    {
+                        "name": "java.util.zip",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/java/util/zip/package-summary.html",
+                        "description": "Provides classes for reading and writing the standard ZIP and GZIP file formats. "
+                    },
+                    {
+                        "name": "javax.crypto",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/crypto/package-summary.html",
+                        "description": "Provides the classes and interfaces for cryptographic operations. "
+                    },
+                    {
+                        "name": "javax.crypto.interfaces",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/crypto/interfaces/package-summary.html",
+                        "description": "Provides interfaces for Diffie-Hellman keys as defined in RSA Laboratories' PKCS #3. "
+                    },
+                    {
+                        "name": "javax.crypto.spec",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/crypto/spec/package-summary.html",
+                        "description": "Provides classes and interfaces for key specifications and algorithm parameter specifications. "
+                    },
+                    {
+                        "name": "javax.net",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/net/package-summary.html",
+                        "description": "Provides classes for networking applications. "
+                    },
+                    {
+                        "name": "javax.net.ssl",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/net/ssl/package-summary.html",
+                        "description": "Provides classes for the secure socket package. "
+                    },
+                    {
+                        "name": "javax.security.auth",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/auth/package-summary.html",
+                        "description": "This package provides a framework for authentication and authorization. "
+                    },
+                    {
+                        "name": "javax.security.auth.callback",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/auth/callback/package-summary.html",
+                        "description": "This package provides the classes necessary for services to interact with applications in order to retrieve information (authentication data including usernames or passwords, for example) or to display information (error and warning messages, for example). "
+                    },
+                    {
+                        "name": "javax.security.auth.login",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/auth/login/package-summary.html",
+                        "description": "This package provides a pluggable authentication framework. "
+                    },
+                    {
+                        "name": "javax.security.auth.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/auth/spi/package-summary.html",
+                        "description": "This package provides the interface to be used for implementing pluggable authentication modules. "
+                    },
+                    {
+                        "name": "javax.security.auth.x500",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/auth/x500/package-summary.html",
+                        "description": "This package contains the classes that should be used to store X500 Principal and X500 Private Credentials in a Subject . "
+                    },
+                    {
+                        "name": "javax.security.cert",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/javax/security/cert/package-summary.html",
+                        "description": "Provides classes for public key certificates. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.compiler": {
+                "Exported packages": [
+                    {
+                        "name": "javax.annotation.processing",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/annotation/processing/package-summary.html",
+                        "description": "Facilities for declaring annotation processors and for allowing annotation processors to communicate with an annotation processing tool environment. "
+                    },
+                    {
+                        "name": "javax.lang.model",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/lang/model/package-summary.html",
+                        "description": "Types and hierarchies of packages comprising a Java language model, a model of the declarations and types of the Java programming language. "
+                    },
+                    {
+                        "name": "javax.lang.model.element",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/lang/model/element/package-summary.html",
+                        "description": "Interfaces used to model elements of the Java programming language. "
+                    },
+                    {
+                        "name": "javax.lang.model.type",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/lang/model/type/package-summary.html",
+                        "description": "Interfaces used to model Java programming language types. "
+                    },
+                    {
+                        "name": "javax.lang.model.util",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/lang/model/util/package-summary.html",
+                        "description": "Utilities to assist in the processing of program elements and types . "
+                    },
+                    {
+                        "name": "javax.tools",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/javax/tools/package-summary.html",
+                        "description": "Provides interfaces for tools which can be invoked from a program, for example, compilers. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.datatransfer": {
+                "Exported packages": [
+                    {
+                        "name": "java.awt.datatransfer",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.datatransfer/java/awt/datatransfer/package-summary.html",
+                        "description": "Provides interfaces and classes for transferring data between and within applications. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.desktop": {
+                "Exported packages": [
+                    {
+                        "name": "java.applet",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/applet/package-summary.html",
+                        "description": "Provides the classes necessary to create an applet and the classes an applet uses to communicate with its applet context. "
+                    },
+                    {
+                        "name": "java.awt",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/package-summary.html",
+                        "description": "Contains all of the classes for creating user interfaces and for painting graphics and images. "
+                    },
+                    {
+                        "name": "java.awt.color",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/color/package-summary.html",
+                        "description": "Provides classes for color spaces. "
+                    },
+                    {
+                        "name": "java.awt.desktop",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/desktop/package-summary.html",
+                        "description": "Provides interfaces and classes for interaction with various desktop capabilities. "
+                    },
+                    {
+                        "name": "java.awt.dnd",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/dnd/package-summary.html",
+                        "description": "Drag and Drop is a direct manipulation gesture found in many Graphical User Interface systems that provides a mechanism to transfer information between two entities logically associated with presentation elements in the GUI. "
+                    },
+                    {
+                        "name": "java.awt.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/event/package-summary.html",
+                        "description": "Provides interfaces and classes for dealing with different types of events fired by AWT components. "
+                    },
+                    {
+                        "name": "java.awt.font",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/font/package-summary.html",
+                        "description": "Provides classes and interface relating to fonts. "
+                    },
+                    {
+                        "name": "java.awt.geom",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/geom/package-summary.html",
+                        "description": "Provides the Java 2D classes for defining and performing operations on objects related to two-dimensional geometry. "
+                    },
+                    {
+                        "name": "java.awt.im",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/im/package-summary.html",
+                        "description": "Provides classes and interfaces for the input method framework. "
+                    },
+                    {
+                        "name": "java.awt.im.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/im/spi/package-summary.html",
+                        "description": "Provides interfaces that enable the development of input methods that can be used with any Java runtime environment. "
+                    },
+                    {
+                        "name": "java.awt.image",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/image/package-summary.html",
+                        "description": "Provides classes for creating and modifying images. "
+                    },
+                    {
+                        "name": "java.awt.image.renderable",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/image/renderable/package-summary.html",
+                        "description": "Provides classes and interfaces for producing rendering-independent images. "
+                    },
+                    {
+                        "name": "java.awt.print",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/awt/print/package-summary.html",
+                        "description": "Provides classes and interfaces for a general printing API. "
+                    },
+                    {
+                        "name": "java.beans",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/beans/package-summary.html",
+                        "description": "Contains classes related to developing beans -- components based on the JavaBeans architecture. "
+                    },
+                    {
+                        "name": "java.beans.beancontext",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/java/beans/beancontext/package-summary.html",
+                        "description": "Provides classes and interfaces relating to bean context. "
+                    },
+                    {
+                        "name": "javax.accessibility",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/accessibility/package-summary.html",
+                        "description": "Defines a contract between user-interface components and an assistive technology that provides access to those components. "
+                    },
+                    {
+                        "name": "javax.imageio",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/package-summary.html",
+                        "description": "The main package of the Java Image I/O API. "
+                    },
+                    {
+                        "name": "javax.imageio.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/event/package-summary.html",
+                        "description": "A package of the Java Image I/O API dealing with synchronous notification of events during the reading and writing of images. "
+                    },
+                    {
+                        "name": "javax.imageio.metadata",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/metadata/package-summary.html",
+                        "description": "A package of the Java Image I/O API dealing with reading and writing metadata. "
+                    },
+                    {
+                        "name": "javax.imageio.plugins.bmp",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/plugins/bmp/package-summary.html",
+                        "description": "Package containing the public classes used by the built-in BMP plug-in. "
+                    },
+                    {
+                        "name": "javax.imageio.plugins.jpeg",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/plugins/jpeg/package-summary.html",
+                        "description": "Classes supporting the built-in JPEG plug-in. "
+                    },
+                    {
+                        "name": "javax.imageio.plugins.tiff",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/plugins/tiff/package-summary.html",
+                        "description": "Public classes used by the built-in TIFF plug-ins. "
+                    },
+                    {
+                        "name": "javax.imageio.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/spi/package-summary.html",
+                        "description": "A package of the Java Image I/O API containing the plug-in interfaces for readers, writers, transcoders, and streams, and a runtime registry. "
+                    },
+                    {
+                        "name": "javax.imageio.stream",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/imageio/stream/package-summary.html",
+                        "description": "A package of the Java Image I/O API dealing with low-level I/O from files and streams. "
+                    },
+                    {
+                        "name": "javax.print",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/print/package-summary.html",
+                        "description": "Provides the principal classes and interfaces for the Java Print Service API. "
+                    },
+                    {
+                        "name": "javax.print.attribute",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/print/attribute/package-summary.html",
+                        "description": "Provides classes and interfaces that describe the types of Java Print Service attributes and how they can be collected into attribute sets. "
+                    },
+                    {
+                        "name": "javax.print.attribute.standard",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/print/attribute/standard/package-summary.html",
+                        "description": "Package javax.print.attribute.standard contains classes for specific printing attributes. "
+                    },
+                    {
+                        "name": "javax.print.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/print/event/package-summary.html",
+                        "description": "Package javax.print.event contains event classes and listener interfaces. "
+                    },
+                    {
+                        "name": "javax.sound.midi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/sound/midi/package-summary.html",
+                        "description": "Provides interfaces and classes for I/O, sequencing, and synthesis of MIDI (Musical Instrument Digital Interface) data. "
+                    },
+                    {
+                        "name": "javax.sound.midi.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/sound/midi/spi/package-summary.html",
+                        "description": "Supplies interfaces for service providers to implement when offering new MIDI devices, MIDI file readers and writers, or sound bank readers. "
+                    },
+                    {
+                        "name": "javax.sound.sampled",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/sound/sampled/package-summary.html",
+                        "description": "Provides interfaces and classes for capture, processing, and playback of sampled audio data. "
+                    },
+                    {
+                        "name": "javax.sound.sampled.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/sound/sampled/spi/package-summary.html",
+                        "description": "Supplies abstract classes for service providers to subclass when offering new audio devices, sound file readers and writers, or audio format converters. "
+                    },
+                    {
+                        "name": "javax.swing",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/package-summary.html",
+                        "description": "Provides a set of \"lightweight\" (all-Java language) components that, to the maximum degree possible, work the same on all platforms. "
+                    },
+                    {
+                        "name": "javax.swing.border",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/border/package-summary.html",
+                        "description": "Provides classes and interface for drawing specialized borders around a Swing component. "
+                    },
+                    {
+                        "name": "javax.swing.colorchooser",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/colorchooser/package-summary.html",
+                        "description": "Contains classes and interfaces used by the JColorChooser component. "
+                    },
+                    {
+                        "name": "javax.swing.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/event/package-summary.html",
+                        "description": "Provides for events fired by Swing components. "
+                    },
+                    {
+                        "name": "javax.swing.filechooser",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/filechooser/package-summary.html",
+                        "description": "Contains classes and interfaces used by the JFileChooser component. "
+                    },
+                    {
+                        "name": "javax.swing.plaf",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/package-summary.html",
+                        "description": "Provides one interface and many abstract classes that Swing uses to provide its pluggable look-and-feel capabilities. "
+                    },
+                    {
+                        "name": "javax.swing.plaf.basic",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/basic/package-summary.html",
+                        "description": "Provides user interface objects built according to the Basic look and feel. "
+                    },
+                    {
+                        "name": "javax.swing.plaf.metal",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/metal/package-summary.html",
+                        "description": "Provides user interface objects built according to the Java look and feel (once codenamed Metal ), which is the default look and feel. "
+                    },
+                    {
+                        "name": "javax.swing.plaf.multi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/multi/package-summary.html",
+                        "description": "Provides user interface objects that combine two or more look and feels. "
+                    },
+                    {
+                        "name": "javax.swing.plaf.nimbus",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/nimbus/package-summary.html",
+                        "description": "Provides user interface objects built according to the cross-platform Nimbus look and feel. "
+                    },
+                    {
+                        "name": "javax.swing.plaf.synth",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/plaf/synth/package-summary.html",
+                        "description": "Synth is a skinnable look and feel in which all painting is delegated. "
+                    },
+                    {
+                        "name": "javax.swing.table",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/table/package-summary.html",
+                        "description": "Provides classes and interfaces for dealing with javax.swing.JTable . "
+                    },
+                    {
+                        "name": "javax.swing.text",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/text/package-summary.html",
+                        "description": "Provides classes and interfaces that deal with editable and noneditable text components. "
+                    },
+                    {
+                        "name": "javax.swing.text.html",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/text/html/package-summary.html",
+                        "description": "Provides the class HTMLEditorKit and supporting classes for creating HTML text editors. "
+                    },
+                    {
+                        "name": "javax.swing.text.html.parser",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/text/html/parser/package-summary.html",
+                        "description": "Provides the default HTML parser, along with support classes. "
+                    },
+                    {
+                        "name": "javax.swing.text.rtf",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/text/rtf/package-summary.html",
+                        "description": "Provides a class ( RTFEditorKit ) for creating Rich-Text-Format text editors. "
+                    },
+                    {
+                        "name": "javax.swing.tree",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/tree/package-summary.html",
+                        "description": "Provides classes and interfaces for dealing with javax.swing.JTree . "
+                    },
+                    {
+                        "name": "javax.swing.undo",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/javax/swing/undo/package-summary.html",
+                        "description": "Allows developers to provide support for undo/redo in applications such as text editors. "
+                    }
+                ],
+                "Required modules": [
+                    "java.datatransfer",
+                    "java.xml"
+                ]
+            }
+        },
+        {
+            "java.instrument": {
+                "Exported packages": [
+                    {
+                        "name": "java.lang.instrument",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.instrument/java/lang/instrument/package-summary.html",
+                        "description": "Provides services that allow Java programming language agents to instrument programs running on the JVM. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.logging": {
+                "Exported packages": [
+                    {
+                        "name": "java.util.logging",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.logging/java/util/logging/package-summary.html",
+                        "description": "Provides the classes and interfaces of the Java 2 platform's core logging facilities. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.management": {
+                "Exported packages": [
+                    {
+                        "name": "java.lang.management",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/java/lang/management/package-summary.html",
+                        "description": "Provides the management interfaces for monitoring and management of theJava virtual machine and other components in the Java runtime. "
+                    },
+                    {
+                        "name": "javax.management",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/package-summary.html",
+                        "description": "Provides the core classes for the Java Management Extensions. "
+                    },
+                    {
+                        "name": "javax.management.loading",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/loading/package-summary.html",
+                        "description": "Provides the classes which implement advanced dynamic        loading. "
+                    },
+                    {
+                        "name": "javax.management.modelmbean",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/modelmbean/package-summary.html",
+                        "description": "Provides the definition of the ModelMBean classes. "
+                    },
+                    {
+                        "name": "javax.management.monitor",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/monitor/package-summary.html",
+                        "description": "Provides the definition of the monitor classes. "
+                    },
+                    {
+                        "name": "javax.management.openmbean",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/openmbean/package-summary.html",
+                        "description": "Provides the open data types and Open MBean descriptor classes. "
+                    },
+                    {
+                        "name": "javax.management.relation",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/relation/package-summary.html",
+                        "description": "Provides the definition of the Relation Service. "
+                    },
+                    {
+                        "name": "javax.management.remote",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/remote/package-summary.html",
+                        "description": "Interfaces for remote access to        JMX MBean servers. "
+                    },
+                    {
+                        "name": "javax.management.timer",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/javax/management/timer/package-summary.html",
+                        "description": "Provides the definition of the Timer MBean. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.management.rmi": {
+                "Exported packages": [
+                    {
+                        "name": "javax.management.remote.rmi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management.rmi/javax/management/remote/rmi/package-summary.html",
+                        "description": "The RMI connector is a connector for the JMX Remote API that      uses RMI to transmit client requests to a remote MBean server. "
+                    }
+                ],
+                "Required modules": [
+                    "java.management",
+                    "java.rmi"
+                ]
+            }
+        },
+        {
+            "java.naming": {
+                "Exported packages": [
+                    {
+                        "name": "javax.naming",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/package-summary.html",
+                        "description": "Provides the classes and interfaces for accessing naming services. "
+                    },
+                    {
+                        "name": "javax.naming.directory",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/directory/package-summary.html",
+                        "description": "Extends the javax.naming package to provide functionalityfor accessing directory services. "
+                    },
+                    {
+                        "name": "javax.naming.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/event/package-summary.html",
+                        "description": "Provides support for event notification when accessing naming anddirectory services. "
+                    },
+                    {
+                        "name": "javax.naming.ldap",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/ldap/package-summary.html",
+                        "description": "Provides support for LDAPv3 extended operations and controls. "
+                    },
+                    {
+                        "name": "javax.naming.ldap.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/ldap/spi/package-summary.html",
+                        "description": ""
+                    },
+                    {
+                        "name": "javax.naming.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/javax/naming/spi/package-summary.html",
+                        "description": "Provides the means for dynamically plugging in support for accessingnaming and directory services through the javax.naming and related packages. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.net.http": {
+                "Exported packages": [
+                    {
+                        "name": "java.net.http",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.net.http/java/net/http/package-summary.html",
+                        "description": "HTTP Client and WebSocket APIs "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.prefs": {
+                "Exported packages": [
+                    {
+                        "name": "java.util.prefs",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.prefs/java/util/prefs/package-summary.html",
+                        "description": "This package allows applications to store and retrieve user and system preference and configuration data. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.rmi": {
+                "Exported packages": [
+                    {
+                        "name": "java.rmi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/java/rmi/package-summary.html",
+                        "description": "Provides the RMI package. "
+                    },
+                    {
+                        "name": "java.rmi.activation",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/java/rmi/activation/package-summary.html",
+                        "description": "Provides support for RMI Object Activation. "
+                    },
+                    {
+                        "name": "java.rmi.dgc",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/java/rmi/dgc/package-summary.html",
+                        "description": "Provides classes and interface for RMI distributed garbage-collection (DGC). "
+                    },
+                    {
+                        "name": "java.rmi.registry",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/java/rmi/registry/package-summary.html",
+                        "description": "Provides a class and two interfaces for the RMI registry. "
+                    },
+                    {
+                        "name": "java.rmi.server",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/java/rmi/server/package-summary.html",
+                        "description": "Provides classes and interfaces for supporting the server side of RMI. "
+                    },
+                    {
+                        "name": "javax.rmi.ssl",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/javax/rmi/ssl/package-summary.html",
+                        "description": "Provides implementations of RMIClientSocketFactory and RMIServerSocketFactory over the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.scripting": {
+                "Exported packages": [
+                    {
+                        "name": "javax.script",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.scripting/javax/script/package-summary.html",
+                        "description": "The scripting API consists of interfaces and classes that defineJava Scripting Engines and providesa framework for their use in Java applications. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.se": {
+                "Exported packages": [],
+                "Required modules": [
+                    "java.compiler",
+                    "java.datatransfer",
+                    "java.desktop",
+                    "java.instrument",
+                    "java.logging",
+                    "java.management",
+                    "java.management.rmi",
+                    "java.naming",
+                    "java.net.http",
+                    "java.prefs",
+                    "java.rmi",
+                    "java.scripting",
+                    "java.security.jgss",
+                    "java.security.sasl",
+                    "java.sql",
+                    "java.sql.rowset",
+                    "java.transaction.xa",
+                    "java.xml",
+                    "java.xml.crypto"
+                ]
+            }
+        },
+        {
+            "java.security.jgss": {
+                "Exported packages": [
+                    {
+                        "name": "javax.security.auth.kerberos",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.security.jgss/javax/security/auth/kerberos/package-summary.html",
+                        "description": "This package contains utility classes related to the Kerberos network authentication protocol. "
+                    },
+                    {
+                        "name": "org.ietf.jgss",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.security.jgss/org/ietf/jgss/package-summary.html",
+                        "description": "This package presents a framework that allows application developers to make use of security services like authentication, data integrity and data confidentiality from a variety of underlying security mechanisms like Kerberos, using a unified API. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.security.sasl": {
+                "Exported packages": [
+                    {
+                        "name": "javax.security.sasl",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.security.sasl/javax/security/sasl/package-summary.html",
+                        "description": "Contains class and interfaces for supporting SASL. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.smartcardio": {
+                "Exported packages": [
+                    {
+                        "name": "javax.smartcardio",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.smartcardio/javax/smartcardio/package-summary.html",
+                        "description": "Java\u2122 Smart Card I/O API. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.sql": {
+                "Exported packages": [
+                    {
+                        "name": "java.sql",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql/java/sql/package-summary.html",
+                        "description": "Provides the API for accessing and processing data stored in a data source (usually a relational database) using the Java programming language. "
+                    },
+                    {
+                        "name": "javax.sql",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql/javax/sql/package-summary.html",
+                        "description": "Provides the API for server side data source access and processing from the Java programming language. "
+                    }
+                ],
+                "Required modules": [
+                    "java.logging",
+                    "java.transaction.xa",
+                    "java.xml"
+                ]
+            }
+        },
+        {
+            "java.sql.rowset": {
+                "Exported packages": [
+                    {
+                        "name": "javax.sql.rowset",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql.rowset/javax/sql/rowset/package-summary.html",
+                        "description": "Standard interfaces and base classes for JDBC RowSet implementations. "
+                    },
+                    {
+                        "name": "javax.sql.rowset.serial",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql.rowset/javax/sql/rowset/serial/package-summary.html",
+                        "description": "Provides utility classes to allow serializable mappings between SQL types and data types in the Java programming language. "
+                    },
+                    {
+                        "name": "javax.sql.rowset.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql.rowset/javax/sql/rowset/spi/package-summary.html",
+                        "description": "The standard classes and interfaces that a third party vendor has to use in its implementation of a synchronization provider. "
+                    }
+                ],
+                "Required modules": [
+                    "java.logging",
+                    "java.naming",
+                    "java.sql"
+                ]
+            }
+        },
+        {
+            "java.transaction.xa": {
+                "Exported packages": [
+                    {
+                        "name": "javax.transaction.xa",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.transaction.xa/javax/transaction/xa/package-summary.html",
+                        "description": "Provides the API that defines the contract between the transaction manager and the resource manager, which allows the transaction manager to enlist and delist resource objects (supplied by the resource manager driver) in JTA transactions. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.xml": {
+                "Exported packages": [
+                    {
+                        "name": "javax.xml",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/package-summary.html",
+                        "description": "Defines constants for XML processing. "
+                    },
+                    {
+                        "name": "javax.xml.catalog",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/catalog/package-summary.html",
+                        "description": "Provides the classes for implementing XML Catalogs OASIS Standard V1.1, 7 October 2005 . "
+                    },
+                    {
+                        "name": "javax.xml.datatype",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/datatype/package-summary.html",
+                        "description": "Defines XML/Java Type Mappings. "
+                    },
+                    {
+                        "name": "javax.xml.namespace",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/namespace/package-summary.html",
+                        "description": "Defines XML Namespace processing. "
+                    },
+                    {
+                        "name": "javax.xml.parsers",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/parsers/package-summary.html",
+                        "description": "Provides the classes for processing XML documents with a SAX (Simple API for XML) parser or a DOM (Document Object Model) Document builder. "
+                    },
+                    {
+                        "name": "javax.xml.stream",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/stream/package-summary.html",
+                        "description": "Defines interfaces and classes for the Streaming API for XML (StAX). "
+                    },
+                    {
+                        "name": "javax.xml.stream.events",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/stream/events/package-summary.html",
+                        "description": "Defines event interfaces for the Streaming API for XML (StAX). "
+                    },
+                    {
+                        "name": "javax.xml.stream.util",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/stream/util/package-summary.html",
+                        "description": "Provides utility classes for the Streaming API for XML (StAX). "
+                    },
+                    {
+                        "name": "javax.xml.transform",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/transform/package-summary.html",
+                        "description": "Defines the generic APIs for processing transformation instructions, and performing a transformation from source to result. "
+                    },
+                    {
+                        "name": "javax.xml.transform.dom",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/transform/dom/package-summary.html",
+                        "description": "Provides DOM specific transformation classes. "
+                    },
+                    {
+                        "name": "javax.xml.transform.sax",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/transform/sax/package-summary.html",
+                        "description": "Provides SAX specific transformation classes. "
+                    },
+                    {
+                        "name": "javax.xml.transform.stax",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/transform/stax/package-summary.html",
+                        "description": "Provides StAX specific transformation classes. "
+                    },
+                    {
+                        "name": "javax.xml.transform.stream",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/transform/stream/package-summary.html",
+                        "description": "Provides stream and URI specific transformation classes. "
+                    },
+                    {
+                        "name": "javax.xml.validation",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/validation/package-summary.html",
+                        "description": "Provides an API for validation of XML documents. "
+                    },
+                    {
+                        "name": "javax.xml.xpath",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/javax/xml/xpath/package-summary.html",
+                        "description": "Provides an object-model neutral API for the evaluation of XPath expressions and access to the evaluation environment. "
+                    },
+                    {
+                        "name": "org.w3c.dom",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/package-summary.html",
+                        "description": "Provides the interfaces for the Document Object Model (DOM). "
+                    },
+                    {
+                        "name": "org.w3c.dom.bootstrap",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/bootstrap/package-summary.html",
+                        "description": "Provides a factory for obtaining instances of DOMImplementation . "
+                    },
+                    {
+                        "name": "org.w3c.dom.events",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/events/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Events. "
+                    },
+                    {
+                        "name": "org.w3c.dom.ls",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/ls/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 3 Load and Save. "
+                    },
+                    {
+                        "name": "org.w3c.dom.ranges",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/ranges/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Range. "
+                    },
+                    {
+                        "name": "org.w3c.dom.traversal",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/traversal/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Traversal. "
+                    },
+                    {
+                        "name": "org.w3c.dom.views",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/w3c/dom/views/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Views. "
+                    },
+                    {
+                        "name": "org.xml.sax",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/xml/sax/package-summary.html",
+                        "description": "Provides the interfaces for the Simple API for XML (SAX). "
+                    },
+                    {
+                        "name": "org.xml.sax.ext",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/xml/sax/ext/package-summary.html",
+                        "description": "Provides interfaces to SAX2 facilities that conformant SAX drivers won't necessarily support. "
+                    },
+                    {
+                        "name": "org.xml.sax.helpers",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/org/xml/sax/helpers/package-summary.html",
+                        "description": "Provides helper classes, including support for bootstrapping SAX-based applications. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "java.xml.crypto": {
+                "Exported packages": [
+                    {
+                        "name": "javax.xml.crypto",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/package-summary.html",
+                        "description": "Common classes for XML cryptography. "
+                    },
+                    {
+                        "name": "javax.xml.crypto.dom",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/dom/package-summary.html",
+                        "description": "DOM-specific classes for the javax.xml.crypto package. "
+                    },
+                    {
+                        "name": "javax.xml.crypto.dsig",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/dsig/package-summary.html",
+                        "description": "Classes for generating and validating XML digital signatures. "
+                    },
+                    {
+                        "name": "javax.xml.crypto.dsig.dom",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/dsig/dom/package-summary.html",
+                        "description": "DOM-specific classes for the javax.xml.crypto.dsig package. "
+                    },
+                    {
+                        "name": "javax.xml.crypto.dsig.keyinfo",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/package-summary.html",
+                        "description": "Classes for parsing and processing KeyInfo elements and structures. "
+                    },
+                    {
+                        "name": "javax.xml.crypto.dsig.spec",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/package-summary.html",
+                        "description": "Parameter classes for XML digital signatures. "
+                    }
+                ],
+                "Required modules": [
+                    "java.xml"
+                ]
+            }
+        },
+        {
+            "jdk.accessibility": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.java.accessibility.util",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.accessibility/com/sun/java/accessibility/util/package-summary.html",
+                        "description": "Provides a collection of interfaces and classes that compose the Java Accessibility Utilities. "
+                    }
+                ],
+                "Required modules": [
+                    "java.desktop"
+                ]
+            }
+        },
+        {
+            "jdk.attach": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.tools.attach",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.attach/com/sun/tools/attach/package-summary.html",
+                        "description": "Provides the API to attach to a Java virtual machine. "
+                    },
+                    {
+                        "name": "com.sun.tools.attach.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.attach/com/sun/tools/attach/spi/package-summary.html",
+                        "description": "Only developers who are defining new attach providers should need to make direct use of this package. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.charsets": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.compiler": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.source.doctree",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.compiler/com/sun/source/doctree/package-summary.html",
+                        "description": "Provides interfaces to represent documentation comments as abstract syntax trees (AST). "
+                    },
+                    {
+                        "name": "com.sun.source.tree",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.compiler/com/sun/source/tree/package-summary.html",
+                        "description": "Provides interfaces to represent source code as abstract syntax trees (AST). "
+                    },
+                    {
+                        "name": "com.sun.source.util",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.compiler/com/sun/source/util/package-summary.html",
+                        "description": "Provides utilities for operations on abstract syntax trees (AST). "
+                    },
+                    {
+                        "name": "com.sun.tools.javac",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.compiler/com/sun/tools/javac/package-summary.html",
+                        "description": "This package provides a legacy entry point for the javac tool. "
+                    }
+                ],
+                "Required modules": [
+                    "java.compiler"
+                ]
+            }
+        },
+        {
+            "jdk.crypto.cryptoki": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.crypto.ec": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.dynalink": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.dynalink",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/jdk/dynalink/package-summary.html",
+                        "description": "Contains interfaces and classes that are used to link an invokedynamic call site. "
+                    },
+                    {
+                        "name": "jdk.dynalink.beans",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/jdk/dynalink/beans/package-summary.html",
+                        "description": "Contains the linker for ordinary Java objects. "
+                    },
+                    {
+                        "name": "jdk.dynalink.linker",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/jdk/dynalink/linker/package-summary.html",
+                        "description": "Contains interfaces and classes needed by language runtimes to implement their own language-specific object models and type conversions. "
+                    },
+                    {
+                        "name": "jdk.dynalink.linker.support",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/jdk/dynalink/linker/support/package-summary.html",
+                        "description": "Contains classes that make it more convenient for language runtimes to implement their own language-specific object models and type conversions by providing basic implementations of some classes as well as various utilities. "
+                    },
+                    {
+                        "name": "jdk.dynalink.support",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/jdk/dynalink/support/package-summary.html",
+                        "description": "Contains classes that make using Dynalink more convenient by providing basic implementations of some classes as well as various utilities. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.editpad": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.hotspot.agent": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.httpserver": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.net.httpserver",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.httpserver/com/sun/net/httpserver/package-summary.html",
+                        "description": "Provides a simple high-level Http server API, which can be used to build   embedded HTTP servers. "
+                    },
+                    {
+                        "name": "com.sun.net.httpserver.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.httpserver/com/sun/net/httpserver/spi/package-summary.html",
+                        "description": "Provides a pluggable service provider interface, which allows the HTTP server implementation to be replaced with other implementations. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.incubator.foreign": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.incubator.foreign",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.incubator.foreign/jdk/incubator/foreign/package-summary.html",
+                        "description": "Classes to support low-level, safe and efficient memory access. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.incubator.jpackage": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jartool": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.jarsigner",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jartool/com/sun/jarsigner/package-summary.html",
+                        "description": "This package comprises the interfaces and classes used to define the signing mechanism used by the jarsigner tool. "
+                    },
+                    {
+                        "name": "jdk.security.jarsigner",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jartool/jdk/security/jarsigner/package-summary.html",
+                        "description": "This package defines APIs for signing jar files. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.javadoc": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.javadoc.doclet",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.javadoc/jdk/javadoc/doclet/package-summary.html",
+                        "description": "The Doclet API provides an environment which, in conjunction with the Language Model API and Compiler Tree API, allows clients to inspect the source-level structures of programs and libraries, including API comments embedded in the source. "
+                    }
+                ],
+                "Required modules": [
+                    "java.compiler",
+                    "jdk.compiler"
+                ]
+            }
+        },
+        {
+            "jdk.jcmd": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jconsole": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.tools.jconsole",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jconsole/com/sun/tools/jconsole/package-summary.html",
+                        "description": "This package contains the JConsole API. "
+                    }
+                ],
+                "Required modules": [
+                    "java.desktop",
+                    "java.management"
+                ]
+            }
+        },
+        {
+            "jdk.jdeps": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jdi": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.jdi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/com/sun/jdi/package-summary.html",
+                        "description": "This is the core package of the Java Debug Interface (JDI), it defines mirrors for values, types, and the target VirtualMachine itself - as well bootstrapping facilities. "
+                    },
+                    {
+                        "name": "com.sun.jdi.connect",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/com/sun/jdi/connect/package-summary.html",
+                        "description": "This package defines connections between the virtual machine using the JDI and the target virtual machine. "
+                    },
+                    {
+                        "name": "com.sun.jdi.connect.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/com/sun/jdi/connect/spi/package-summary.html",
+                        "description": "This package comprises the interfaces and classes used to develop new TransportService implementations. "
+                    },
+                    {
+                        "name": "com.sun.jdi.event",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/com/sun/jdi/event/package-summary.html",
+                        "description": "This package defines JDI events and event processing. "
+                    },
+                    {
+                        "name": "com.sun.jdi.request",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/com/sun/jdi/request/package-summary.html",
+                        "description": "This package is used to request that a JDI event be sent under specified conditions. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jdwp.agent": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jfr": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.jfr",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jfr/jdk/jfr/package-summary.html",
+                        "description": "This package provides classes to create events and control Flight Recorder. "
+                    },
+                    {
+                        "name": "jdk.jfr.consumer",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jfr/jdk/jfr/consumer/package-summary.html",
+                        "description": "This package contains classes for consuming Flight Recorder data. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jlink": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jshell": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.jshell",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jshell/jdk/jshell/package-summary.html",
+                        "description": "Provides interfaces for creating tools, such as a Read-Eval-Print Loop (REPL), which interactively evaluate \"snippets\" of Java programming language code. "
+                    },
+                    {
+                        "name": "jdk.jshell.execution",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jshell/jdk/jshell/execution/package-summary.html",
+                        "description": "Provides implementation support for building JShell execution engines. "
+                    },
+                    {
+                        "name": "jdk.jshell.spi",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jshell/jdk/jshell/spi/package-summary.html",
+                        "description": "Defines the Service Provider Interface for pluggable JShell execution engines. "
+                    },
+                    {
+                        "name": "jdk.jshell.tool",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jshell/jdk/jshell/tool/package-summary.html",
+                        "description": "Provides a mechanism to launch an instance of a Java shell tool. "
+                    }
+                ],
+                "Required modules": [
+                    "java.compiler",
+                    "java.prefs",
+                    "jdk.jdi"
+                ]
+            }
+        },
+        {
+            "jdk.jsobject": {
+                "Exported packages": [
+                    {
+                        "name": "netscape.javascript",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jsobject/netscape/javascript/package-summary.html",
+                        "description": "Provides Java code the ability to access the JavaScript engine and the HTML DOM in the web browser. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.jstatd": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.localedata": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.management": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.management",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.management/com/sun/management/package-summary.html",
+                        "description": "This package contains the JDK's extension to the standard implementation of the java.lang.management API and also defines the management interface for some other components of the platform. "
+                    }
+                ],
+                "Required modules": [
+                    "java.management"
+                ]
+            }
+        },
+        {
+            "jdk.management.agent": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.management.jfr": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.management.jfr",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.management.jfr/jdk/management/jfr/package-summary.html",
+                        "description": "This package contains classes to control and monitor Flight Recorder over Java Management Extensions (JMX). "
+                    }
+                ],
+                "Required modules": [
+                    "java.management"
+                ]
+            }
+        },
+        {
+            "jdk.naming.dns": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.naming.rmi": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.net": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.net",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.net/jdk/net/package-summary.html",
+                        "description": "Platform specific socket options for the java.net and java.nio.channels socket classes. "
+                    },
+                    {
+                        "name": "jdk.nio",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.net/jdk/nio/package-summary.html",
+                        "description": "Defines JDK-specific channel APIs. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.nio.mapmode": {
+                "Exported packages": [
+                    {
+                        "name": "jdk.nio.mapmode",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.nio.mapmode/jdk/nio/mapmode/package-summary.html",
+                        "description": ""
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.sctp": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.nio.sctp",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.sctp/com/sun/nio/sctp/package-summary.html",
+                        "description": "A Java API for Stream Control Transport Protocol. "
+                    }
+                ],
+                "Required modules": []
+            }
+        },
+        {
+            "jdk.security.auth": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.security.auth",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.auth/com/sun/security/auth/package-summary.html",
+                        "description": "Provides implementations of Principal . "
+                    },
+                    {
+                        "name": "com.sun.security.auth.callback",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.auth/com/sun/security/auth/callback/package-summary.html",
+                        "description": "Provides an implementation of CallbackHandler . "
+                    },
+                    {
+                        "name": "com.sun.security.auth.login",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.auth/com/sun/security/auth/login/package-summary.html",
+                        "description": "Provides an implementation of Configuration . "
+                    },
+                    {
+                        "name": "com.sun.security.auth.module",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.auth/com/sun/security/auth/module/package-summary.html",
+                        "description": "Provides implementations of LoginModule . "
+                    }
+                ],
+                "Required modules": [
+                    "java.naming"
+                ]
+            }
+        },
+        {
+            "jdk.security.jgss": {
+                "Exported packages": [
+                    {
+                        "name": "com.sun.security.jgss",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.jgss/com/sun/security/jgss/package-summary.html",
+                        "description": "This package defines classes and interfaces for the JDK extensions to the GSS-API. "
+                    }
+                ],
+                "Required modules": [
+                    "java.security.jgss"
+                ]
+            }
+        },
+        {
+            "jdk.xml.dom": {
+                "Exported packages": [
+                    {
+                        "name": "org.w3c.dom.css",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.xml.dom/org/w3c/dom/css/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Style Specification. "
+                    },
+                    {
+                        "name": "org.w3c.dom.html",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.xml.dom/org/w3c/dom/html/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 HTML Specification. "
+                    },
+                    {
+                        "name": "org.w3c.dom.stylesheets",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.xml.dom/org/w3c/dom/stylesheets/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 2 Style Specification. "
+                    },
+                    {
+                        "name": "org.w3c.dom.xpath",
+                        "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.xml.dom/org/w3c/dom/xpath/package-summary.html",
+                        "description": "Provides interfaces for DOM Level 3 XPath Specification. "
+                    }
+                ],
+                "Required modules": [
+                    "java.xml"
+                ]
+            }
+        },
+        {
+            "jdk.zipfs": {
+                "Exported packages": [],
+                "Required modules": []
+            }
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>KG4Code</title>
+</head>
+
+<style>
+    body,
+    html {
+        background-color: rgb(6, 38, 87);
+        font-family: 'Open Sans', sans-serif;
+        height: 100%;
+    }
+
+    .upper {
+        background-color: rgb(255, 255, 255);
+    }
+
+    input {
+        width: 80%;
+        height: 10mm;
+        font-size: 5mm;
+        border-radius: 20mm;
+        padding: 5mm;
+        text-align: center;
+        border: rgb(22, 196, 202) 1mm solid;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+    }
+
+    .repo {
+        color: white;
+    }
+
+    .common {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .head {
+        padding-bottom: 10px;
+        padding-top: 60px;
+        color: rgb(6, 38, 87);
+        font-size: 100px;
+        font-weight: 700;
+        text-shadow: 2px 2px rgb(22, 196, 202);
+    }
+
+    .head2 {
+        font-size: 25px;
+        padding-top: 10px;
+        color: rgb(6, 38, 87);
+    }
+
+
+    .foot {
+        text-align: right;
+        color: white;
+        font-size: 20px;
+    }
+
+    .team {
+        text-align: right;
+        padding-top: 0px;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .divide {
+        background-color: #ccc;
+        width: 70%;
+        text-align: right;
+        margin-right: 10mm;
+    }
+
+    .space {
+        height: 50px;
+    }
+
+    .codes {
+        height: 200px;
+        width: 60%;
+        margin-left: 20%;
+        padding: 20px;
+        /* text-align: center; */
+        overflow-y: scroll;
+    }
+
+    .link {
+        padding: 10px;
+        background: rgb(238, 234, 234);
+        border-radius: 2px;
+        margin-bottom: 4px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+
+
+<body>
+    <div class="upper">
+        <div class="common head">KG4Code</div>
+
+        <div class="common head2">
+            Code Search Engine
+        </div>
+
+        <div class="space">
+        </div>
+
+        <div class="common repo">
+            <form action="/search" method="post">
+                <input type="text" name="query" placeholder="Enter a query to retrieve code."></input>
+            </form>
+        </div>
+
+        <div class="codes">
+            {% for code in codes: %}
+                <div class="link"><a href="{{ code["a.uri"] }}">{{ code["a.uri"] }}</a></div>
+            {% endfor %}
+        </div>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#062657" fill-opacity="1" d="M0,256L80,234.7C160,213,320,171,480,181.3C640,192,800,256,960,240C1120,224,1280,128,1360,80L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>     -->
+        <div style="padding: 5%;">
+        </div>
+    </div>
+
+    <div class="lowe">
+        <div class="common foot">
+            Research in Intelligent Software and Human Analytics (RISHA) Lab, Indian Institute of Technology Tirupati
+        </div>
+
+        <hr class="divide">
+
+        <div class="common team">
+            Karthik Chandra, Dheeraj Vagavolu and Sridhar Chimalakonda
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

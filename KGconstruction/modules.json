@@ -1,0 +1,299 @@
+{
+    "modules": [
+        {
+            "name": "java.base",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.base/module-summary.html",
+            "description": "Defines the foundational APIs of the Java SE Platform. "
+        },
+        {
+            "name": "java.compiler",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.compiler/module-summary.html",
+            "description": "Defines the Language Model, Annotation Processing, and Java Compiler APIs. "
+        },
+        {
+            "name": "java.datatransfer",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.datatransfer/module-summary.html",
+            "description": "Defines the API for transferring data between and within applications. "
+        },
+        {
+            "name": "java.desktop",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.desktop/module-summary.html",
+            "description": "Defines the AWT and Swing user interface toolkits, plus APIs for accessibility, audio, imaging, printing, and JavaBeans. "
+        },
+        {
+            "name": "java.instrument",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.instrument/module-summary.html",
+            "description": "Defines services that allow agents to instrument programs running on the JVM. "
+        },
+        {
+            "name": "java.logging",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.logging/module-summary.html",
+            "description": "Defines the Java Logging API. "
+        },
+        {
+            "name": "java.management",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management/module-summary.html",
+            "description": "Defines the Java Management Extensions (JMX) API. "
+        },
+        {
+            "name": "java.management.rmi",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.management.rmi/module-summary.html",
+            "description": "Defines the RMI connector for the Java Management Extensions (JMX) Remote API. "
+        },
+        {
+            "name": "java.naming",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.naming/module-summary.html",
+            "description": "Defines the Java Naming and Directory Interface (JNDI) API. "
+        },
+        {
+            "name": "java.net.http",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.net.http/module-summary.html",
+            "description": "Defines the HTTP Client and WebSocket APIs. "
+        },
+        {
+            "name": "java.prefs",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.prefs/module-summary.html",
+            "description": "Defines the Preferences API. "
+        },
+        {
+            "name": "java.rmi",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.rmi/module-summary.html",
+            "description": "Defines the Remote Method Invocation (RMI) API. "
+        },
+        {
+            "name": "java.scripting",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.scripting/module-summary.html",
+            "description": "Defines the Scripting API. "
+        },
+        {
+            "name": "java.se",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.se/module-summary.html",
+            "description": "Defines the API of the Java SE Platform. "
+        },
+        {
+            "name": "java.security.jgss",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.security.jgss/module-summary.html",
+            "description": "Defines the Java binding of the IETF Generic Security Services API (GSS-API). "
+        },
+        {
+            "name": "java.security.sasl",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.security.sasl/module-summary.html",
+            "description": "Defines Java support for the IETF Simple Authentication and Security Layer (SASL). "
+        },
+        {
+            "name": "java.smartcardio",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.smartcardio/module-summary.html",
+            "description": "Defines the Java Smart Card I/O API. "
+        },
+        {
+            "name": "java.sql",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql/module-summary.html",
+            "description": "Defines the JDBC API. "
+        },
+        {
+            "name": "java.sql.rowset",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.sql.rowset/module-summary.html",
+            "description": "Defines the JDBC RowSet API. "
+        },
+        {
+            "name": "java.transaction.xa",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.transaction.xa/module-summary.html",
+            "description": "Defines an API for supporting distributed transactions in JDBC. "
+        },
+        {
+            "name": "java.xml",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml/module-summary.html",
+            "description": "Defines the Java API for XML Processing (JAXP), the Streaming API for XML (StAX), the Simple API for XML (SAX), and the W3C Document Object Model (DOM) API. "
+        },
+        {
+            "name": "java.xml.crypto",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/java.xml.crypto/module-summary.html",
+            "description": "Defines the API for XML cryptography. "
+        },
+        {
+            "name": "jdk.accessibility",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.accessibility/module-summary.html",
+            "description": "Defines JDK utility classes used by implementors of Assistive Technologies. "
+        },
+        {
+            "name": "jdk.attach",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.attach/module-summary.html",
+            "description": "Defines the attach API. "
+        },
+        {
+            "name": "jdk.charsets",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.charsets/module-summary.html",
+            "description": "Provides charsets that are not in java.base (mostly double byte and IBM charsets). "
+        },
+        {
+            "name": "jdk.compiler",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.compiler/module-summary.html",
+            "description": "Defines the implementation of the system Java compiler and its command line equivalent, javac . "
+        },
+        {
+            "name": "jdk.crypto.cryptoki",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.crypto.cryptoki/module-summary.html",
+            "description": "Provides the implementation of the SunPKCS11 security provider. "
+        },
+        {
+            "name": "jdk.crypto.ec",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.crypto.ec/module-summary.html",
+            "description": "Provides the implementation of the SunEC security provider. "
+        },
+        {
+            "name": "jdk.dynalink",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.dynalink/module-summary.html",
+            "description": "Defines the API for dynamic linking of high-level operations on objects. "
+        },
+        {
+            "name": "jdk.editpad",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.editpad/module-summary.html",
+            "description": "Provides the implementation of the edit pad service used by jdk.jshell . "
+        },
+        {
+            "name": "jdk.hotspot.agent",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.hotspot.agent/module-summary.html",
+            "description": "Defines the implementation of the HotSpot Serviceability Agent. "
+        },
+        {
+            "name": "jdk.httpserver",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.httpserver/module-summary.html",
+            "description": "Defines the JDK-specific HTTP server API. "
+        },
+        {
+            "name": "jdk.incubator.foreign",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.incubator.foreign/module-summary.html",
+            "description": "Defines the experimental foreign memory access API. "
+        },
+        {
+            "name": "jdk.incubator.jpackage",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.incubator.jpackage/module-summary.html",
+            "description": "Defines the Java Packaging tool, jpackage. "
+        },
+        {
+            "name": "jdk.jartool",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jartool/module-summary.html",
+            "description": "Defines tools for manipulating Java Archive (JAR) files, including the jar and jarsigner tools. "
+        },
+        {
+            "name": "jdk.javadoc",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.javadoc/module-summary.html",
+            "description": "Defines the implementation of the system documentation tool and its command-line equivalent, javadoc . "
+        },
+        {
+            "name": "jdk.jcmd",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jcmd/module-summary.html",
+            "description": "Defines tools for diagnostics and troubleshooting a JVM such as the jcmd , jps , jstat tools. "
+        },
+        {
+            "name": "jdk.jconsole",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jconsole/module-summary.html",
+            "description": "Defines the JMX graphical tool, jconsole , for monitoring and managing a running application. "
+        },
+        {
+            "name": "jdk.jdeps",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdeps/module-summary.html",
+            "description": "Defines tools for analysing dependencies in Java libraries and programs, including the jdeps , javap , and jdeprscan tools. "
+        },
+        {
+            "name": "jdk.jdi",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdi/module-summary.html",
+            "description": "Defines the Java Debug Interface. "
+        },
+        {
+            "name": "jdk.jdwp.agent",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jdwp.agent/module-summary.html",
+            "description": "Provides the implementation of the Java Debug Wire Protocol (JDWP) agent. "
+        },
+        {
+            "name": "jdk.jfr",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jfr/module-summary.html",
+            "description": "Defines the API for JDK Flight Recorder. "
+        },
+        {
+            "name": "jdk.jlink",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jlink/module-summary.html",
+            "description": "Defines the jlink tool for creating run-time images, the jmod tool for creating and manipulating JMOD files, and the jimage tool for inspecting the JDK implementation-specific container file for classes and resources. "
+        },
+        {
+            "name": "jdk.jshell",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jshell/module-summary.html",
+            "description": "Provides the jshell tool for evaluating snippets of Java code, and defines a JDK-specific API for modeling and executing snippets. "
+        },
+        {
+            "name": "jdk.jsobject",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jsobject/module-summary.html",
+            "description": "Defines the API for the JavaScript Object. "
+        },
+        {
+            "name": "jdk.jstatd",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.jstatd/module-summary.html",
+            "description": "Defines the jstatd tool for starting a daemon for the jstat tool to monitor JVM statistics remotely. "
+        },
+        {
+            "name": "jdk.localedata",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.localedata/module-summary.html",
+            "description": "Provides the locale data for locales other than US locale . "
+        },
+        {
+            "name": "jdk.management",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.management/module-summary.html",
+            "description": "Defines JDK-specific management interfaces for the JVM. "
+        },
+        {
+            "name": "jdk.management.agent",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.management.agent/module-summary.html",
+            "description": "Defines the JMX management agent. "
+        },
+        {
+            "name": "jdk.management.jfr",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.management.jfr/module-summary.html",
+            "description": "Defines the Management Interface for JDK Flight Recorder. "
+        },
+        {
+            "name": "jdk.naming.dns",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.naming.dns/module-summary.html",
+            "description": "Provides the implementation of the DNS Java Naming provider. "
+        },
+        {
+            "name": "jdk.naming.rmi",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.naming.rmi/module-summary.html",
+            "description": "Provides the implementation of the RMI Java Naming provider. "
+        },
+        {
+            "name": "jdk.net",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.net/module-summary.html",
+            "description": "Defines the JDK-specific Networking API. "
+        },
+        {
+            "name": "jdk.nio.mapmode",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.nio.mapmode/module-summary.html",
+            "description": "Defines JDK-specific file mapping modes. "
+        },
+        {
+            "name": "jdk.sctp",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.sctp/module-summary.html",
+            "description": "Defines the JDK-specific API for SCTP. "
+        },
+        {
+            "name": "jdk.security.auth",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.auth/module-summary.html",
+            "description": "Provides implementations of the javax.security.auth.* interfaces and various authentication modules. "
+        },
+        {
+            "name": "jdk.security.jgss",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.security.jgss/module-summary.html",
+            "description": "Defines JDK extensions to the GSS-API and an implementation of the SASL GSSAPI mechanism. "
+        },
+        {
+            "name": "jdk.xml.dom",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.xml.dom/module-summary.html",
+            "description": "Defines the subset of the W3C Document Object Model (DOM) API that is not part of the Java SE API. "
+        },
+        {
+            "name": "jdk.zipfs",
+            "link": "C:/Users/karthik chandra/Desktop/CS/DEMO/docs/api/jdk.zipfs/module-summary.html",
+            "description": "Provides the implementation of the Zip file system provider. "
+        }
+    ]
+}
